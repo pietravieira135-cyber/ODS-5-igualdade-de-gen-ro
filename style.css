@@ -1,18 +1,18 @@
 body {
-    background-color: rgb(102, 21, 53);
+    background-color: rgb(207, 76, 137);
     
 
 
 }
 h1{
-    color: rgb(0, 0, 0);
+    color: rgb(124, 7, 72);
 }
 
 h2 {
-    color: rgb(0, 0, 0);
+    color: rgb(12, 0, 8);
 }
 p {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 h1, h2, p {
     text-align: center;
@@ -24,7 +24,7 @@ img {
     max-width: 100%;
 }
 h1 {
-    border: 2px solid #c94f83;
+    border: 2px solid #740736;
     border-radius: 20px;
     padding: 15px;
     text-align: center;
@@ -39,7 +39,7 @@ img {
 h1 {
     border: 2px solid #c94f83;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 15px;
 }
 img {
@@ -130,4 +130,218 @@ nav a:hover {
 @media screen and (max-width: 800px;) {
     .image-equilibrio {width: 100%;
     height: auto;}
+}
+
+/* ÁREAS INTERATIVAS */
+
+.interativo {
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 30px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.interativo h2 {
+    color: #922d59;
+}
+
+.interativo p {
+    color: #51263d;
+}
+
+/* GALERIA */
+
+.galeria-mulheres {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.mulher {
+    background-color: #f8e4ed;
+    border: 1px solid #c94f83;
+    border-radius: 15px;
+    padding: 20px;
+    color: #681633;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mulher span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+.mulher:hover {
+    background-color: #c94f83;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* METAS */
+
+.metas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 20px auto;
+    max-width: 450px;
+}
+
+.metas-grid button {
+    background-color: #c94f83;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.metas-grid button:hover {
+    background-color: #681633;
+    transform: scale(1.05);
+}
+
+/* RESULTADOS */
+
+.resultado {
+    background-color: #f8e4ed;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 20px;
+    min-height: 30px;
+}
+
+/* QUIZ */
+
+#alternativas button,
+#proxima {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 13px;
+    border: 1px solid #c94f83;
+    border-radius: 12px;
+    background-color: #f8e4ed;
+    color: #681633;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#alternativas button:hover,
+#proxima:hover {
+    background-color: #c94f83;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .interativo {
+        width: 85%;
+    }
+
+    .galeria-mulheres {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* BOTÕES COM MOVIMENTO CONTÍNUO */
+
+nav a,
+.mulher,
+.metas-grid button,
+#alternativas button,
+#proxima,
+#reiniciar {
+    animation: flutuar 2.5s ease-in-out infinite;
+}
+
+/* Movimento de subir e descer */
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Pequeno atraso para cada botão */
+
+nav a:nth-child(2),
+.mulher:nth-child(2),
+.metas-grid button:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+nav a:nth-child(3),
+.mulher:nth-child(3),
+.metas-grid button:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+nav a:nth-child(4),
+.mulher:nth-child(4),
+.metas-grid button:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+/* Pausa o movimento ao passar o mouse */
+
+nav a:hover,
+.mulher:hover,
+.metas-grid button:hover,
+#alternativas button:hover {
+    animation-play-state: paused;
+}
+
+/* FONTES E REFERÊNCIAS */
+
+.lista-referencias {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.lista-referencias p {
+    color: #51263d;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #f0c4d5;
+    line-height: 1.6;
+}
+
+.lista-referencias a {
+    color: #922d59;
+    text-decoration: none;
+}
+
+.lista-referencias a:hover {
+    color: #c94f83;
+    text-decoration: underline;
+}
+
+.data-referencias {
+    font-size: 13px;
+    color: #922d59;
+    margin-top: 20px;
+}
+.lista-referencias p {
+    border: 1px solid #e8b6ca;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 12px 0;
+    background-color: #fff7fa;
+    text-align: left;
 }
