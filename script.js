@@ -1,6 +1,4 @@
-
-// GALERIA DE MULHERES
-
+//GALERIA DE MULHERES INSPIRADORAS
 const mulheres = [
     "Marie Curie foi uma cientista pioneira. Foi a primeira mulher a receber um Prêmio Nobel.",
     "Malala Yousafzai luta pelo direito das meninas à educação e recebeu o Nobel da Paz.",
